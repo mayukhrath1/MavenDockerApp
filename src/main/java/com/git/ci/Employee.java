@@ -6,7 +6,7 @@ package com.git.ci;
 import java.io.Serializable;
 
 /**
- * @author Arunangsu
+ * @author Arunangsu Sahu
  *
  */
 public class Employee implements Serializable {
