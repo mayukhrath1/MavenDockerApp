@@ -1,5 +1,4 @@
 FROM tomcat:8.5.38-alpine
-MAINTAINER arunangsu9362@gmail.com
 
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
