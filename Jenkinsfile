@@ -14,7 +14,7 @@ pipeline {
     stage('push image') {
       steps {
         sh '''docker login -u="1234567abcdefg" -p="Narayan@15"
-docker push 1234567abcdefg/mavendocker'''
+docker push mavendocker'''
       }
     }
   }
