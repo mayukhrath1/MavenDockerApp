@@ -18,5 +18,10 @@ docker tag mavendocker 1234567abcdefg/mavendocker:latest
 docker push 1234567abcdefg/mavendocker'''
       }
     }
+    stage('sqltest') {
+      steps {
+        sh 'mysql -hlocalhost -t -v -uroot -pabc123 -Dtest_db < "/home/abzooba/.jenkins/workspace/mavendockerapp_master/testclear.sql"'
+      }
+    }
   }
 }
